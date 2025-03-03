@@ -1,0 +1,89 @@
+10.2 D_Main.jsp 
+ 
+<!DOCTYPE 	html 	PUBLIC 	"-//W3C//DTD 	XHTML 	1.0 
+Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <%@ page language="java" contentType="text/html; charset=ISO-8859-1"     pageEncoding="ISO-8859-1"%>  	<%@page import ="java.util.*"%> 
+<%@ include file="connect.jsp" %> 
+<%@page 	import 
+="java.util.*,java.security.Key,java.util.Random,javax.crypto.Cipher,javax.crypto.spec.SecretKe ySpec,org.bouncycastle.util.encoders.Base64"%> 
+<%@ 	page 
+import="java.sql.*,java.util.Random,java.io.PrintStream,java.io.FileOutputStream,java.io.FileIn putStream,java.security.DigestInputStream,java.math.BigInteger,java.security.MessageDigest,ja va.io.BufferedInputStream" %> 
+<%@ 	page 	import 
+="java.security.Key,java.security.KeyPair,java.security.KeyPairGenerator,javax.crypto.Cipher"
+%> 
+<%@page 	import 
+="java.util.*,java.text.SimpleDateFormat,java.util.Date,java.io.FileInputStream,java.io.FileOutp utStream,java.io.PrintStream"%> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<title><%=application.getAttribute("docname")%> (Doctor)</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<link href="style.css" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="js/cufon-yui.js"></script> 
+<script type="text/javascript" src="js/georgia.js"></script> 
+<script type="text/javascript" src="js/cuf_run.js"></script> 
+<style type="text/css"> 
+<!-- 
+.style1 {font-size: 23px} 
+.style2 { 
+ 	color: #FF0000;  	font-weight: bold; 
+} 
+--> 
+</style> 
+</head> 
+<body> 
+<div class="main"> 
+<div class="header"> 
+<div class="header_resize"> 
+<div class="logo"> 
+<h1><a href="index.html" class="style1"><a href="index.html" class="style1">A Secure Data Sharing and Authorized  <br /> 
+Searchable </a><a href="index.html" class="style1"> Framework for e-Healthcare System <br /> 
+</a></h1> 
+</div> 
+<div class="menu_nav"> 
+<ul> 
+<li class="active"><a href="D_Main.jsp">Hi <%=application.getAttribute("docname")%> !! 
+(Doctor)</a></li> 
+<li><a href="D_Login.jsp">Logout</a></li> 
+</ul> 
+<div class="clr"></div> 
+</div> 
+<div class="clr"></div> 
+</div> 
+</div> 
+<div class="content"> 
+<div class="content_resize"> 
+<div class="mainbar"> 
+<div > 
+<h2><span>Hi <%=application.getAttribute("docname")%> !! </span></h2> 
+<p><span class="style2">Role : (Doctor)</span><img src="images/img2.jpg" width="613" height="154" alt="" /></p> 
+<p align="justify"><span class="style2">In medical cloud computing, a patient can remotely outsource her medical data to the cloud server. In this case, only authorized doctors are allowed to access the data since the medical data is highly sensitive. Encrypting the data before outsourcing is a commonly used approach, where the patient only needs to send the corresponding encryption key to the authorized doctors. This, however, significantly limits the usability of outsourced medical data due to the difficulty of searching over the encrypted data. In this paper, we propose two Secure and Efficient Dynamic Searchable Symmetric Encryption (SEDSSE) schemes over . 
+.</span></p> 
+</div> 
+</div> 
+<div class="sidebar"> 
+<div class="gadget"> 
+<h2 class="star">Doctor Menu</h2> 
+<ul class="sb_menu"> 
+ 	 	 	<li><a href="D_Main.jsp">Home</a></li> 
+ 	 	 	<li><a href="D_ViewProfile.jsp">View Profile</a></li> 
+ 	 	 	<li><a href="D_AddTreatment.jsp">Search From Cloud and Add 
+Treatment</a></li> 
+ 	 	 	<li><a href="D_SchedulePatients.jsp">Search From Cloud and Schedule 
+Patients</a></li> 
+ 	 	 	<li><a href="D_ViewSCH_Patients.jsp">Search From Cloud and View 
+Scheduled Patients</a></li> 
+ 	 	 	<li><a href="D_Login.jsp">Logout</a></li> 
+</ul> 
+</div> 
+<div class="gadget"> 
+<h2 class="star">&nbsp;</h2> 
+</div> 
+</div> 
+<div class="clr"></div> 
+</div> 
+</div> 
+<div class="fbg"></div> 
+<div class="footer"></div> 
+</div> 
+<div align=center></div> 
+</body> 
+</html> 
